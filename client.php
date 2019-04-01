@@ -4,10 +4,10 @@
          <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <style>
-        html,body{
+       html, body{
             height: 100%;
             width:100%;
-            background-color:darkviolet;
+            background-image:radial-gradient(#17193E,#0E0E13);
             padding-bottom: 0;
         }
         
