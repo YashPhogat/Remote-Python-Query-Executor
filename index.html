@@ -1,0 +1,77 @@
+<html>
+<head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <title>Remote Python IDE</title>
+    <!-- this is the code that will allow icon to be visible in the title bar of the brower -->
+    <link rel="icon" type="image/ico" href="Python_Logo.png"/>
+    <style>
+        html,body,h3,h1, textarea{
+            font-family: 'Roboto', sans-serif;
+            }
+        html, body{
+            height: 100%;
+            width:100%;
+            background-image:radial-gradient(#17193E,#0E0E13);
+            padding-bottom: 0;
+        }
+        
+input.Sub_Button {
+  display: inline-block;
+  border-radius: 4px;
+  background-color: #28E785;
+  border: none;
+  color: #17193E;
+  text-align: center;
+  font-size: 15px;
+  padding: 10px;
+  width: 100px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 2px;
+}
+
+input.Sub_Button{
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+input.Sub_Button:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.25s;
+}
+
+input.Sub_Button:hover{
+  padding-right: 30px;
+}
+
+input.Sub_Button:hover after {
+  opacity: 1;
+  right: 0;
+}
+    </style>
+</head>
+    
+    <body>
+        <div name="query_ui"; style="margin:auto;">
+            <ul><h1 style="text-align:center; color:#CFCFD9;">
+            REMOTE PYTHON QUERY EXECUTION</h1></ul>
+    <h3 style="text-align:center; color:#28E785;">Enter the queries here in the following textbox
+        </h3>
+            <form action="rqe.php" name="query_text" method="post">
+    <textarea name="textinput" rows="24" cols="100" style="margin-left:23%; margin-right:auto; border: 5px solid #22E2A2;  border-radius: 4px; background-color: black; color:#DEE6E3; font-size:13.5px;">
+        </textarea><br><br>
+                <input class = "Sub_Button" type="submit" value="Get Results" style=" margin-left:45%;">
+                                
+                </form>
+            <p style="margin-left:37%; color:gray; font-size:10px;">@Disclaimer: The product uses images and fonts from third party providers.</p>
+        </div>
+    </body>
+</html>
